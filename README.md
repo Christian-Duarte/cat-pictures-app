@@ -13,6 +13,7 @@ Este proyecto es una aplicación web que consume la API de [Cataas](https://cata
 ## Capturas de Pantalla
 
 ![Captura de pantalla 2024-09-28 111226](https://github.com/user-attachments/assets/97b0b63b-09e3-47e7-9d56-7e7f7b38c04b)
+
 *Interfaz de usuario mostrando un dato curioso y una imagen de gato*
 
 ## Tecnologías Utilizadas

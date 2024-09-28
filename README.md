@@ -1,40 +1,44 @@
-Ejercicio: Galería de Imágenes Aleatorias
+# Cat-Pictures-App
 
-Descripción: Vas a construir una pequeña aplicación en React que haga peticiones a una API para obtener imágenes aleatorias de gatos y mostrarlas en pantalla. Además, el usuario podrá hacer clic en un botón para cargar una nueva imagen cada vez que lo desee.
+Este proyecto es una aplicación web que consume la API de [Cataas](https://cataas.com/) y [Cat Facts](https://catfact.ninja/) para mostrar imágenes de gatos con un texto basado en datos curiosos sobre gatos. La aplicación está desarrollada en **React.js** y utiliza un hook personalizado para manejar la lógica de las peticiones a las APIs.
 
-Instrucciones:
+## Características
 
-Configura tu proyecto en React:
+- Muestra datos curiosos sobre gatos obtenidos de la API de **Cat Facts**.
+- Genera imágenes de gatos a partir del texto de los datos curiosos utilizando la API de **Cataas**.
+- Manejo de errores en caso de que las peticiones a las APIs fallen.
+- Interfaz simple y funcional.
+- Botón para refrescar el dato curioso y la imagen del gato.
 
-Crea un nuevo proyecto de React utilizando create-react-app o tu método preferido.
+## Capturas de Pantalla
 
-Crea un componente CatImage:
+![Captura de pantalla 2024-09-28 111226](https://github.com/user-attachments/assets/97b0b63b-09e3-47e7-9d56-7e7f7b38c04b)
+*Interfaz de usuario mostrando un dato curioso y una imagen de gato*
 
-Este componente será responsable de mostrar la imagen de un gato y tendrá un botón para cargar una nueva imagen.
+## Tecnologías Utilizadas
 
-Utiliza la API de Cataas (Cat as a Service):
+- **React.js**: Para crear la interfaz de usuario.
+- **JavaScript (ES6+)**: Para la lógica de la aplicación y el consumo de las APIs.
+- **Fetch API**: Para realizar las solicitudes HTTP a las APIs.
+- **CSS**: Para el diseño básico de la aplicación.
+- **Cataas API**: Para generar imágenes de gatos con texto.
+- **Cat Facts API**: Para obtener datos curiosos sobre gatos.
 
-La API para obtener una imagen aleatoria es https://cataas.com/cat?json=true.
-Realiza una petición a esta API para obtener la URL de la imagen.
 
-Renderizado condicional:
-
-Muestra un mensaje de carga mientras se espera la respuesta de la API.
-Si ocurre un error durante la petición, muestra un mensaje de error.
-
-Interactividad:
-
-Agrega un botón que, al hacer clic, haga una nueva petición a la API y actualice la imagen mostrada.
-
-Estiliza el componente:
-
-Dale un estilo básico al componente para que la imagen y el botón se vean bien centrados en la pantalla.
-
-Pistas:
-Uso de useEffect: Usa el hook useEffect para hacer la petición a la API cuando el componente se monta por primera vez.
-
-Estado del componente: Usa useState para manejar el estado de la imagen (URL de la imagen) y el estado de carga (cargando o error).
-
-https://catfact.ninja/fact
-
-https://cataas.com/cat/says/${}?fontSize=50&fontColor=red
+## Cómo ejecutar el proyecto
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/Christian-Duarte/cat-pictures-app.git
+   ```
+2. Navegar al directorio del proyecto:
+   ```bash
+   cd cat-pictures-app
+   ```
+3. Instalar dependencias:
+   ```bash
+   npm install
+   ```
+4. Ejecutar la aplicación:
+   ```bash
+   npm run dev
+   ```
